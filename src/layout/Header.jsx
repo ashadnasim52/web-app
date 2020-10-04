@@ -25,7 +25,7 @@ const Header = ({ auth }) => {
 
 	return (
 		<div>
-			<Navbar color='primary' dark expand='md'>
+			<Navbar color='info' dark expand='md'>
 				<NavbarBrand tag={Link} to='/'>
 					reactstrap
 				</NavbarBrand>

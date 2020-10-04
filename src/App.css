@@ -5,4 +5,43 @@
 	margin: 0;
 	outline: 0;
 	box-sizing: border-box;
+	position: relative;
+}
+
+.list-group-item {
+	border: 1px solid rgba(0, 0, 0, 0.733);
+}
+
+.fab {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+
+.ReactModal__Overlay {
+	opacity: 0;
+	transform: translateX(-100px);
+	transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.ReactModal__Overlay--before-close {
+	opacity: 0;
+	transform: translateX(-100px);
+}
+
+.bg-primary {
+	background-color: #150485;
+}
+
+.icon {
+	font-size: 28px;
+}
+
+.img-login {
+	height: 300px;
 }

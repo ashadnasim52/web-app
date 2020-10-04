@@ -9,7 +9,6 @@ import { CHECKING_AUTH, SET_USER } from './actions/action.types';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './App.css';
 import Home from './pages/Home';
 var app = firebase.initializeApp(firebaseConfig);
 
@@ -61,7 +60,17 @@ const App = () => {
 	}, []);
 	return (
 		<>
-			<ToastContainer />
+			<ToastContainer
+				position='bottom-right'
+				autoClose={5000}
+				hideProgressBar={false}
+				newestOnTop
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+			/>
 			<Router>
 				<Header />
 				<Switch>
